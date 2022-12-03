@@ -1,9 +1,7 @@
 
-
 #include <iostream>
+#include <iomanip>
 #include "Contact.hpp"
-
-
 
 void Contact::add_contact(){
   std::cout << "First Name : ";
@@ -19,10 +17,10 @@ void Contact::add_contact(){
   std::cout << "Thats it !\n";
 }
 
-void Contact::toString() {
-  std::cout << "First name : " + this->first_name + "\n";
-  std::cout << "Last name : " + this->last_name + "\n";
-  std::cout << "Phone Number : " + this->phone_number + "\n";
-  std::cout << "Nickname : " + this->nickname + "\n";
-  std::cout << "Darkest Secret : " + this->darkest_secret + "\n";
+void Contact::toString(int index) {
+  std::cout << std::right << std::setw(10) << index << " |";
+  std::cout << std::right << std::setw(10) << this->first_name << " |";
+  std::cout << std::right << std::setw(10) << this->last_name << " |";
+  std::cout << std::right << std::setw(10) << this->nickname << " |";
+  std::cout << "\n";
 }

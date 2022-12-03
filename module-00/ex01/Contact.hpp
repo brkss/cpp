@@ -13,5 +13,5 @@ class Contact {
     std::string phone_number;
   public:
     void add_contact();
-    void toString();
+    void toString(int index);
 };

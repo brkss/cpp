@@ -1,7 +1,8 @@
 
 
-
+#include <iostream>
 #include "PhoneBook.hpp"
+#include <iomanip>
 
 PhoneBook::PhoneBook(){
   this->curr = 0;
@@ -21,8 +22,12 @@ void PhoneBook::add(){
 void PhoneBook::search() {
   int i = 0;
   
+  std::cout << std::right << std::setw(10) << "Index" << " |";
+  std::cout << std::right << std::setw(10) << "F Name" << " |";
+  std::cout << std::right << std::setw(10) << "L Name" << " |";
+  std::cout << std::right << std::setw(10) << "Nickname" << " |\n";
   while(i < this->size){
-    this->contact[i].toString();
+    this->contact[i].toString(i);
     i++;
   }
 }

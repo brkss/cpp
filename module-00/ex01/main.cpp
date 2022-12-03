@@ -1,7 +1,10 @@
 
+#include <iomanip>
 #include <iostream>
+#include <ostream>
 #include <string>
 #include "PhoneBook.hpp"
+
 
 int main(){
 
@@ -10,7 +13,6 @@ int main(){
 
   std::cout << "Welcome To Your Phonebok : \n";
   while(1){
-
     std::cout << "[ADD | SEARCH | EXIT] > ";
     std::cin >> cmd;
 
