@@ -16,7 +16,7 @@ CC = 	c++
 
 FLAGS =	-Wall -Wextra -Werror
 
-SRC = 	Contact.cpp
+SRC = 	PhoneBook.cpp main.cpp Contact.cpp
 
 
 all : $(NAME)

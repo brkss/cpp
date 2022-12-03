@@ -1,16 +1,17 @@
 
 #include <string>
 
-using namespace std;
 
 class Contact {
-  public:
-    string first_name;
-    string last_name;
-    string nickname;
-    string phone_number;
-    void display();
-  private:
-    string darkest_secret;
 
+
+  private:
+    std::string first_name;
+    std::string last_name;
+    std::string nickname;
+    std::string darkest_secret;
+    std::string phone_number;
+  public:
+    void add_contact();
+    void toString();
 };
