@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <iostream>
+
 using namespace std;
 
 int strlen(char *str)

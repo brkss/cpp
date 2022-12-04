@@ -22,7 +22,7 @@ SRC = 	PhoneBook.cpp main.cpp Contact.cpp
 all : $(NAME)
 
 $(NAME):
-	c++ $(SRC) -o $(NAME)
+	c++ $(SRC) -o $(NAME) $(FLAGS)
 
 clean:
 	rm -f $(NAME)

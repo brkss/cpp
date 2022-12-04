@@ -1,4 +1,7 @@
 
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+
 #include <string>
 
 
@@ -15,3 +18,6 @@ class Contact {
     void add_contact();
     void toString(int index);
 };
+
+
+#endif // !CONTACT_HPP
