@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <iostream>
-
-
+#include <string>
+/*
 int strlen(char *str)
 {
 	int len;
@@ -22,7 +22,7 @@ int strlen(char *str)
 		len++;
 	return len;
 }
-
+*/
 int main(int ac, char **av){
 
 	int i, j, len;
@@ -30,7 +30,7 @@ int main(int ac, char **av){
 	i = 1;
 	while(i < ac)
 	{
-		len = strlen(av[i]);
+		len = std::strlen(av[i]);
 		j = 0;
 		while(j < len)
 		{

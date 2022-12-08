@@ -12,16 +12,16 @@
 
 NAME = 	megaphone
 
-CC = 	c++
+CC = c++
 
-FLAGS =	-Wall -Wextra -Werror
+FLAGS =	-Wall -Wextra -Werror -std=c++98
 
 SRC = 	megaphone.cpp
 
 all : $(NAME)
 
 $(NAME):
-	c++ $(SRC) -o $(NAME)
+	c++ $(SRC) -o $(NAME) $(FLAGS)
 
 clean:
 	rm -f $(NAME)
