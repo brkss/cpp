@@ -12,7 +12,6 @@
 
 #include <iostream>
 
-using namespace std;
 
 int strlen(char *str)
 {
@@ -36,13 +35,18 @@ int main(int ac, char **av){
 		while(j < len)
 		{
 			if(av[i][j] >= 'a' && av[i][j] <= 'z')
-				cout << (char)toupper(av[i][j]);
+				std::cout << (char)toupper(av[i][j]);
 			else
-				cout << (char)av[i][j];
+				std::cout << (char)av[i][j];
 			j++;
 		}
 		i++;
 	}
+	if(ac == 1){
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+	}
+
+	std::cout << "\n";
 
 	return 0;
 }

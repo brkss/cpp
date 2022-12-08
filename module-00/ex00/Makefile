@@ -18,7 +18,6 @@ FLAGS =	-Wall -Wextra -Werror
 
 SRC = 	megaphone.cpp
 
-
 all : $(NAME)
 
 $(NAME):
