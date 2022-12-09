@@ -15,5 +15,4 @@ Zombie::Zombie(std::string name){
 }
 
 Zombie::~Zombie(){
-  std::cout << this->name + " is out !\n";
 }

@@ -16,7 +16,7 @@ CC = 	c++
 
 FLAGS =	-Wall -Wextra -Werror
 
-SRC =  main.cpp
+SRC =  HumanA.cpp HumanB.cpp Weapon.cpp main.cpp
 
 all : $(NAME)
 
