@@ -1,5 +1,5 @@
 
-
+#include <string>
 #include <iostream>
 #include "PhoneBook.hpp"
 #include <iomanip>
@@ -21,6 +21,7 @@ void PhoneBook::add(){
 
 void PhoneBook::search() {
   int i = 0;
+  std::string val;
   int index = -1;
 
   std::cout << std::right << std::setw(10) << "Index" << " |";
@@ -32,9 +33,11 @@ void PhoneBook::search() {
     i++;
   }
   std::cout << "ENTER INDEX : ";
-  std::cin >> index;
+  std::cin >> val ;
   
-  if (index >= this->size || index < 0){
+  index = val[0]-'0';
+
+  if (val.length() != 1 || index >= this->size || index < 0){
     std::cout << "Invaldi index !\n";
     return;
   }
