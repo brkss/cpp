@@ -20,7 +20,7 @@ void Contact::add_contact(){
   std::cin >> this->phone_number;
   std::cout << "Darkest Secret : ";
   std::cin >> this->darkest_secret;
-  std::cout << "Thats it !\n";
+  std::cout << "ADDED !\n";
 }
 
 void Contact::toString(int index) {
@@ -29,4 +29,12 @@ void Contact::toString(int index) {
   std::cout << std::right << std::setw(10) << form_field(this->last_name) << " |";
   std::cout << std::right << std::setw(10) << form_field(this->nickname) << " |";
   std::cout << "\n";
+}
+
+void Contact::show(void){
+  std::cout << "First Name : " + this->first_name + "\n";
+  std::cout << "Last Name : " + this->last_name + "\n";
+  std::cout << "Nickame : " + this->nickname + "\n";
+  std::cout << "Phone number : " + this->phone_number + "\n";
+  std::cout << "Darkest Secret : "  + this->darkest_secret + "\n";
 }

@@ -17,6 +17,7 @@ class Contact {
   public:
     void add_contact();
     void toString(int index);
+    void show();
 };
 
 

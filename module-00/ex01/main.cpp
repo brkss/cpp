@@ -28,7 +28,7 @@ int main(){
       break;
     }
     else {
-      std::cout << "INVALID COMMAND !";
+      std::cout << "INVALID COMMAND !\n";
     }
   }
 

@@ -21,7 +21,8 @@ void PhoneBook::add(){
 
 void PhoneBook::search() {
   int i = 0;
-  
+  int index = -1;
+
   std::cout << std::right << std::setw(10) << "Index" << " |";
   std::cout << std::right << std::setw(10) << "F Name" << " |";
   std::cout << std::right << std::setw(10) << "L Name" << " |";
@@ -30,4 +31,13 @@ void PhoneBook::search() {
     this->contact[i].toString(i);
     i++;
   }
+  std::cout << "ENTER INDEX : ";
+  std::cin >> index;
+  
+  if (index >= this->size || index < 0){
+    std::cout << "Invaldi index !\n";
+    return;
+  }
+
+  this->contact[index].show();
 }
