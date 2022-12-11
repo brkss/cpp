@@ -11,5 +11,5 @@ HumanA::HumanA(std::string name, Weapon weapon){
 }
 
 void HumanA::attack(){
-  std::cout << this->name;
+  std::cout << this->name + " attacks with their " + this->weapon.getType() + "\n";
 }
