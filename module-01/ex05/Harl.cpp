@@ -2,6 +2,9 @@
 
 #include "Harl.hpp"
 
+Harl::Harl(){
+  
+}
 
 void Harl::debug(){
   std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!\n";  
@@ -19,6 +22,19 @@ void Harl::error(){
   std::cout << "This is unacceptable! I want to speak to the manager now.\n";
 }
 
+void comment(Harl *harl, void(Harl::*cmt)(void)){
+  (harl->*cmt)();
+}
+
 void Harl::complain(std::string level){
+  Harl harl;
+  void (Harl::*talks[])(void) = { &Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
+  std::string taks_ref[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+  for(int i = 0; i < 5; i++){
+    if(taks_ref[i] == level){
+      comment(&harl, talks[i]);
+    }
+  }
 
 }
